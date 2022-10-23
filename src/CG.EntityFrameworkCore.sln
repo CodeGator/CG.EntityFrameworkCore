@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33015.44
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.EntityFrameworkCore", "CG.EntityFrameworkCore\CG.EntityFrameworkCore.csproj", "{ADDD96C1-3818-4E41-924B-194EE93F3E76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.EntityFramework.Tests", "..\tests\CG.EntityFrameworkCore.Tests\CG.EntityFramework.Tests.csproj", "{59A73999-D758-42FB-8260-1D5B4FA1EA52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADDD96C1-3818-4E41-924B-194EE93F3E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADDD96C1-3818-4E41-924B-194EE93F3E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADDD96C1-3818-4E41-924B-194EE93F3E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADDD96C1-3818-4E41-924B-194EE93F3E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A73999-D758-42FB-8260-1D5B4FA1EA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A73999-D758-42FB-8260-1D5B4FA1EA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A73999-D758-42FB-8260-1D5B4FA1EA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A73999-D758-42FB-8260-1D5B4FA1EA52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E65D742-8F23-47D9-97D4-CE7D0C36B0CC}
+	EndGlobalSection
+EndGlobal
