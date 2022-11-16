@@ -1,4 +1,6 @@
 ﻿
+
+
 namespace Microsoft.EntityFrameworkCore.Infrastructure;
 
 /// <summary>
