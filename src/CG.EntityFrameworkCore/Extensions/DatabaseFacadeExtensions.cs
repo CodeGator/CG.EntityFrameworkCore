@@ -1,6 +1,4 @@
 ﻿
-
-
 namespace Microsoft.EntityFrameworkCore.Infrastructure;
 
 /// <summary>
@@ -121,7 +119,7 @@ public static partial class DatabaseFacadeExtensions
         }
 
         // Look for the parsed server name in the local cache.
-        if (_databaseNames.TryGetValue(connectionString, out var serverName))
+        if (_serverNames.TryGetValue(connectionString, out var serverName))
         {
             return serverName;
         }
@@ -139,7 +137,7 @@ public static partial class DatabaseFacadeExtensions
             serverName = $"{parser["server"]}";
 
             // Update the cache.
-            _databaseNames.TryAdd(connectionString, serverName);
+            _serverNames.TryAdd(connectionString, serverName);
 
             // Return the server name.
             return serverName;
