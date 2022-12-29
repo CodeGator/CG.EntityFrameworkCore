@@ -1,5 +1,5 @@
 ﻿
-namespace Microsoft.EntityFrameworkCore.Infrastructure;
+namespace Microsoft.EntityFrameworkCore;
 
 /// <summary>
 /// This class contains extension methods related to the <see cref="DatabaseFacade"/>
