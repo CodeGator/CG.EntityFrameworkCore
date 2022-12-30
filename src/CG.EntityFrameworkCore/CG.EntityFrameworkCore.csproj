@@ -8,14 +8,15 @@
 
 Platforms supported:
       .NET 6.x or above</Description>
-    <Copyright>Copyright © 2022 by CodeGator. All rights reserved.</Copyright>
+    <Copyright>Copyright © 2022 - 2023 by CodeGator. All rights reserved.</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/CodeGator/CG.Core</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/CodeGator/CG.EntityFrameworkCore</PackageProjectUrl>
     <PackageTags>EFCORE, entity framework, CG.EntityFrameworkCore, CodeGator</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
     <PackageIconUrl />
+    <RepositoryUrl>https://github.com/CodeGator/CG.EntityFrameworkCore</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

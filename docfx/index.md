@@ -2,7 +2,7 @@
 
 # Introduction
 
-CG.EntityFrameworkCore.dll contains EFCORE extensions used by other CodeGator pacakges.
+CG.EntityFrameworkCore.dll contains EFCORE extensions used by other CodeGator packages.
 
 
 

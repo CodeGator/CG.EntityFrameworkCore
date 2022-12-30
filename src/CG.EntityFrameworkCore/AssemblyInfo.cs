@@ -1,4 +1,4 @@
 ﻿using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("CG.EnttiyFrameworkCore.Tests")]
+[assembly: InternalsVisibleTo("CG.EntityFrameworkCore.Tests")]
 
