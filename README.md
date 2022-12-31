@@ -13,8 +13,9 @@ The package contains EFCORE extensions used by other CodeGator packages.
 
 #### Commonly used types:
 
-* CG.EntityFrameworkCore.IEntityFrameworkCore
-* CG.EntityFrameworkCore.EntityFrameworkCoreException
+* CG.EntityFrameworkCore.EntityBaseMap
+* CG.EntityFrameworkCore.DesignTimeDbContextFactory
+* CG.EntityFrameworkCore.Options.DataAccessLayerOptions
 
 #### What platform(s) does it support?
 
