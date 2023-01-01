@@ -85,7 +85,7 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Grabbing the '{section}' section for the DAL",
+            "Grabbing the '{section}' section for the data access layer",
             sectionPath
             );
 
@@ -96,7 +96,8 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Configuring DAL options from the '{section}' section",
+            "Configuring DAL options from the '{section}' section, " +
+            "for the data access layer",
             sectionPath
             );
 
@@ -111,7 +112,8 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Getting the provider name from the '{section}' section",
+            "Getting the provider name from the '{section}' section, " +
+            "for the data access layer",
             sectionPath
             );
 
@@ -120,7 +122,8 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Getting the '{section}:{prov}' section",
+            "Getting the '{section}:{prov}' section, for the data " +
+            "access layer",
             sectionPath,
             providerName            
             );
@@ -132,7 +135,8 @@ public static class WebApplicationBuilderExtensions
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
-            "Getting the assembly name for the provider"
+            "Getting the assembly name for the provider, for the " +
+            "data access layer"
             );
 
         // Get the assembly name from the configuration.
@@ -154,7 +158,7 @@ public static class WebApplicationBuilderExtensions
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
             "Searching for an extension method named: '{name}' in " +
-            "assembly: {asm}",
+            "assembly: {asm}, for the data access layer",
             methodName,
             assemblyName
             );
@@ -173,7 +177,8 @@ public static class WebApplicationBuilderExtensions
         {
             // Tell the world what we are about to do.
             bootstrapLogger?.LogDebug(
-                "Calling extension method named: '{name}' in assembly: {asm}",
+                "Calling extension method named: '{name}' in assembly: " +
+                "{asm}, for the data access layer",
                 methodName,
                 assemblyName
                 );

@@ -92,14 +92,14 @@ public static class WebApplicationExtensions
         {
             // Panic!!
             throw new InvalidDataException(
-                $"The 'SectionPath' property on the DAL options is required but " +
-                "wasn't provided!"
+                $"The 'SectionPath' property on the DAL options is required " +
+                "but wasn't provided!"
                 );
         }
 
         // Tell the world what we are about to do.
         webApplication.Logger.LogDebug(
-            "Getting the '{path}' section",
+            "Getting the '{path}' section, for the data access layer",
             providerSectionPath
             );
         
@@ -110,7 +110,8 @@ public static class WebApplicationExtensions
 
         // Tell the world what we are about to do.
         webApplication.Logger.LogDebug(
-            "Getting the assembly name for the provider"
+            "Getting the assembly name for the provider, for the data " +
+            "access layer"
             );
 
         // Get the assembly name from the configuration.
@@ -121,8 +122,8 @@ public static class WebApplicationExtensions
         {
             // Panic!!
             throw new InvalidDataException(
-                $"The '{providerSectionPath}:AssemblyName' section is required but " +
-                "wasn't found in the configuration!"
+                $"The '{providerSectionPath}:AssemblyName' section is required " +
+                "but wasn't found in the configuration!"
                 );
         }
 
@@ -132,7 +133,7 @@ public static class WebApplicationExtensions
         // Tell the world what we are about to do.
         webApplication.Logger.LogDebug(
             "Searching for an extension method named: '{name}' in " +
-            "assembly: {asm}",
+            "assembly: {asm}, for the data access layer",
             methodName,
             assemblyName
             );
@@ -150,7 +151,8 @@ public static class WebApplicationExtensions
         {
             // Tell the world what we are about to do.
             webApplication.Logger.LogDebug(
-                "Calling extension method named: '{name}' in assembly: {asm}",
+                "Calling extension method named: '{name}' in assembly: " +
+                "{asm}, for the data access layer",
                 methodName,
                 assemblyName
                 );
