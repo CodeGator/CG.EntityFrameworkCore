@@ -24,7 +24,7 @@ public class AuditedEntityBase
     /// <summary>
     /// This property contains the name of the last person to update the entity.
     /// </summary>
-    public string LastUpdatedBy { get; set; } = null!;
+    public string? LastUpdatedBy { get; set; }
 
     /// <summary>
     /// This property contains the date/time when the entity was last updated.
