@@ -12,7 +12,7 @@ namespace Microsoft.EntityFrameworkCore.Design;
 /// required to create a <typeparamref name="TContext"/> instance, at runtime.
 /// </para>
 /// <para>
-/// The <see cref="OnConfigureDataContextOptions(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder{TContext}, IConfiguration)"/>
+/// The <see cref="OnConfigureDataContextOptions(DbContextOptionsBuilder{TContext}, IConfiguration)"/>
 /// method is called, internally, to configure the data-context options using
 /// the settings that were read in the 'appSettings.json' file."/>
 /// </para>

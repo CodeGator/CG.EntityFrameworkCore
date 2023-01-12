@@ -1,7 +1,6 @@
-﻿global using System;
+﻿global using CG.EntityFrameworkCore.Entities;
 global using CG.EntityFrameworkCore.Options;
 global using CG.Validations;
-global using System.IO;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.EntityFrameworkCore.Infrastructure;
 global using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -10,7 +9,9 @@ global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Logging;
 global using Microsoft.Extensions.Options;
+global using System;
 global using System.Collections.Concurrent;
 global using System.ComponentModel.DataAnnotations;
 global using System.Data.Common;
+global using System.IO;
 global using System.Linq;

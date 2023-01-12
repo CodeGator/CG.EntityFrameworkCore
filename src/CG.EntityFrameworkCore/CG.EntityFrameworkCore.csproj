@@ -1,55 +1,58 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>net6.0</TargetFrameworks>
-    <Authors>Martin Cook</Authors>
-    <Company>CodeGator</Company>
-    <Description>This package contains EFCORE extensions used by other CodeGator packages. 
+	<PropertyGroup>
+		<TargetFrameworks>net6.0</TargetFrameworks>
+		<Authors>Martin Cook</Authors>
+		<Company>CodeGator</Company>
+		<Nullable>enable</Nullable>
+		<Description>
+			This package contains EFCORE extensions used by other CodeGator packages.
 
-Platforms supported:
-      .NET 6.x or above</Description>
-    <Copyright>Copyright © 2022 - 2023 by CodeGator. All rights reserved.</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/CodeGator/CG.EntityFrameworkCore</PackageProjectUrl>
-    <PackageTags>EFCORE, entity framework, CG.EntityFrameworkCore, CodeGator</PackageTags>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
-    <PackageIconUrl />
-    <RepositoryUrl>https://github.com/CodeGator/CG.EntityFrameworkCore</RepositoryUrl>
-  </PropertyGroup>
+			Platforms supported:
+			.NET 6.x or above
+		</Description>
+		<Copyright>Copyright © 2022 - 2023 by CodeGator. All rights reserved.</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/CodeGator/CG.EntityFrameworkCore</PackageProjectUrl>
+		<PackageTags>EFCORE, entity framework, CG.EntityFrameworkCore, CodeGator</PackageTags>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<PackageIcon>packageDefaultIcon-50x50.png</PackageIcon>
+		<PackageIconUrl />
+		<RepositoryUrl>https://github.com/CodeGator/CG.EntityFrameworkCore</RepositoryUrl>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\net6.0\CG.EntityFrameworkCore.xml</DocumentationFile>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>bin\Debug\net6.0\CG.EntityFrameworkCore.xml</DocumentationFile>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="obj\**" />
-    <EmbeddedResource Remove="obj\**" />
-    <None Remove="obj\**" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="obj\**" />
+		<EmbeddedResource Remove="obj\**" />
+		<None Remove="obj\**" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="CG.Options" Version="2023.1.2" />
-    <PackageReference Include="CG.Reflection" Version="2023.1.5" />
-    <PackageReference Include="CG.Validations" Version="2023.1.6" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.2" />
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.5.119">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="CG.Options" Version="2023.1.2" />
+		<PackageReference Include="CG.Reflection" Version="2023.1.5" />
+		<PackageReference Include="CG.Validations" Version="2023.1.6" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.2" />
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.5.119">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\..\packageDefaultIcon-50x50.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\packageDefaultIcon-50x50.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Properties\" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />

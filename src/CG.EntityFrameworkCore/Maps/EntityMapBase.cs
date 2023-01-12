@@ -1,5 +1,4 @@
-﻿
-namespace CG.EntityFrameworkCore;
+﻿namespace CG.EntityFrameworkCore.Maps;
 
 /// <summary>
 /// This class represents a base implementation of the <see cref="IEntityTypeConfiguration{TEntity}"/>
