@@ -1,62 +1,126 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: CG.EntityFrameworkCore
-  name: CG.EntityFrameworkCore
-  href: api/CG.EntityFrameworkCore.html
-  commentId: N:CG.EntityFrameworkCore
-  fullName: CG.EntityFrameworkCore
-  nameWithType: CG.EntityFrameworkCore
-- uid: CG.EntityFrameworkCore.EntityMapBase`1
+- uid: CG.EntityFrameworkCore.Entities
+  name: CG.EntityFrameworkCore.Entities
+  href: api/CG.EntityFrameworkCore.Entities.html
+  commentId: N:CG.EntityFrameworkCore.Entities
+  fullName: CG.EntityFrameworkCore.Entities
+  nameWithType: CG.EntityFrameworkCore.Entities
+- uid: CG.EntityFrameworkCore.Entities.AuditedEntityBase
+  name: AuditedEntityBase
+  href: api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html
+  commentId: T:CG.EntityFrameworkCore.Entities.AuditedEntityBase
+  fullName: CG.EntityFrameworkCore.Entities.AuditedEntityBase
+  nameWithType: AuditedEntityBase
+- uid: CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedBy
+  name: CreatedBy
+  href: api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html#CG_EntityFrameworkCore_Entities_AuditedEntityBase_CreatedBy
+  commentId: P:CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedBy
+  fullName: CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedBy
+  nameWithType: AuditedEntityBase.CreatedBy
+- uid: CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedBy*
+  name: CreatedBy
+  href: api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html#CG_EntityFrameworkCore_Entities_AuditedEntityBase_CreatedBy_
+  commentId: Overload:CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedBy
+  isSpec: "True"
+  fullName: CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedBy
+  nameWithType: AuditedEntityBase.CreatedBy
+- uid: CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedOnUtc
+  name: CreatedOnUtc
+  href: api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html#CG_EntityFrameworkCore_Entities_AuditedEntityBase_CreatedOnUtc
+  commentId: P:CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedOnUtc
+  fullName: CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedOnUtc
+  nameWithType: AuditedEntityBase.CreatedOnUtc
+- uid: CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedOnUtc*
+  name: CreatedOnUtc
+  href: api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html#CG_EntityFrameworkCore_Entities_AuditedEntityBase_CreatedOnUtc_
+  commentId: Overload:CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedOnUtc
+  isSpec: "True"
+  fullName: CG.EntityFrameworkCore.Entities.AuditedEntityBase.CreatedOnUtc
+  nameWithType: AuditedEntityBase.CreatedOnUtc
+- uid: CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedBy
+  name: LastUpdatedBy
+  href: api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html#CG_EntityFrameworkCore_Entities_AuditedEntityBase_LastUpdatedBy
+  commentId: P:CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedBy
+  fullName: CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedBy
+  nameWithType: AuditedEntityBase.LastUpdatedBy
+- uid: CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedBy*
+  name: LastUpdatedBy
+  href: api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html#CG_EntityFrameworkCore_Entities_AuditedEntityBase_LastUpdatedBy_
+  commentId: Overload:CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedBy
+  isSpec: "True"
+  fullName: CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedBy
+  nameWithType: AuditedEntityBase.LastUpdatedBy
+- uid: CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedOnUtc
+  name: LastUpdatedOnUtc
+  href: api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html#CG_EntityFrameworkCore_Entities_AuditedEntityBase_LastUpdatedOnUtc
+  commentId: P:CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedOnUtc
+  fullName: CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedOnUtc
+  nameWithType: AuditedEntityBase.LastUpdatedOnUtc
+- uid: CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedOnUtc*
+  name: LastUpdatedOnUtc
+  href: api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html#CG_EntityFrameworkCore_Entities_AuditedEntityBase_LastUpdatedOnUtc_
+  commentId: Overload:CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedOnUtc
+  isSpec: "True"
+  fullName: CG.EntityFrameworkCore.Entities.AuditedEntityBase.LastUpdatedOnUtc
+  nameWithType: AuditedEntityBase.LastUpdatedOnUtc
+- uid: CG.EntityFrameworkCore.Maps
+  name: CG.EntityFrameworkCore.Maps
+  href: api/CG.EntityFrameworkCore.Maps.html
+  commentId: N:CG.EntityFrameworkCore.Maps
+  fullName: CG.EntityFrameworkCore.Maps
+  nameWithType: CG.EntityFrameworkCore.Maps
+- uid: CG.EntityFrameworkCore.Maps.EntityMapBase`1
   name: EntityMapBase<TEntity>
-  href: api/CG.EntityFrameworkCore.EntityMapBase-1.html
-  commentId: T:CG.EntityFrameworkCore.EntityMapBase`1
+  href: api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.html
+  commentId: T:CG.EntityFrameworkCore.Maps.EntityMapBase`1
   name.vb: EntityMapBase(Of TEntity)
-  fullName: CG.EntityFrameworkCore.EntityMapBase<TEntity>
-  fullName.vb: CG.EntityFrameworkCore.EntityMapBase(Of TEntity)
+  fullName: CG.EntityFrameworkCore.Maps.EntityMapBase<TEntity>
+  fullName.vb: CG.EntityFrameworkCore.Maps.EntityMapBase(Of TEntity)
   nameWithType: EntityMapBase<TEntity>
   nameWithType.vb: EntityMapBase(Of TEntity)
-- uid: CG.EntityFrameworkCore.EntityMapBase`1.#ctor(ModelBuilder)
+- uid: CG.EntityFrameworkCore.Maps.EntityMapBase`1.#ctor(ModelBuilder)
   name: EntityMapBase(ModelBuilder)
-  href: api/CG.EntityFrameworkCore.EntityMapBase-1.html#CG_EntityFrameworkCore_EntityMapBase_1__ctor_ModelBuilder_
-  commentId: M:CG.EntityFrameworkCore.EntityMapBase`1.#ctor(ModelBuilder)
-  fullName: CG.EntityFrameworkCore.EntityMapBase<TEntity>.EntityMapBase(ModelBuilder)
-  fullName.vb: CG.EntityFrameworkCore.EntityMapBase(Of TEntity).EntityMapBase(ModelBuilder)
+  href: api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.html#CG_EntityFrameworkCore_Maps_EntityMapBase_1__ctor_ModelBuilder_
+  commentId: M:CG.EntityFrameworkCore.Maps.EntityMapBase`1.#ctor(ModelBuilder)
+  fullName: CG.EntityFrameworkCore.Maps.EntityMapBase<TEntity>.EntityMapBase(ModelBuilder)
+  fullName.vb: CG.EntityFrameworkCore.Maps.EntityMapBase(Of TEntity).EntityMapBase(ModelBuilder)
   nameWithType: EntityMapBase<TEntity>.EntityMapBase(ModelBuilder)
   nameWithType.vb: EntityMapBase(Of TEntity).EntityMapBase(ModelBuilder)
-- uid: CG.EntityFrameworkCore.EntityMapBase`1.#ctor*
+- uid: CG.EntityFrameworkCore.Maps.EntityMapBase`1.#ctor*
   name: EntityMapBase
-  href: api/CG.EntityFrameworkCore.EntityMapBase-1.html#CG_EntityFrameworkCore_EntityMapBase_1__ctor_
-  commentId: Overload:CG.EntityFrameworkCore.EntityMapBase`1.#ctor
+  href: api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.html#CG_EntityFrameworkCore_Maps_EntityMapBase_1__ctor_
+  commentId: Overload:CG.EntityFrameworkCore.Maps.EntityMapBase`1.#ctor
   isSpec: "True"
-  fullName: CG.EntityFrameworkCore.EntityMapBase<TEntity>.EntityMapBase
-  fullName.vb: CG.EntityFrameworkCore.EntityMapBase(Of TEntity).EntityMapBase
+  fullName: CG.EntityFrameworkCore.Maps.EntityMapBase<TEntity>.EntityMapBase
+  fullName.vb: CG.EntityFrameworkCore.Maps.EntityMapBase(Of TEntity).EntityMapBase
   nameWithType: EntityMapBase<TEntity>.EntityMapBase
   nameWithType.vb: EntityMapBase(Of TEntity).EntityMapBase
-- uid: CG.EntityFrameworkCore.EntityMapBase`1._modelBuilder
+- uid: CG.EntityFrameworkCore.Maps.EntityMapBase`1._modelBuilder
   name: _modelBuilder
-  href: api/CG.EntityFrameworkCore.EntityMapBase-1.html#CG_EntityFrameworkCore_EntityMapBase_1__modelBuilder
-  commentId: F:CG.EntityFrameworkCore.EntityMapBase`1._modelBuilder
-  fullName: CG.EntityFrameworkCore.EntityMapBase<TEntity>._modelBuilder
-  fullName.vb: CG.EntityFrameworkCore.EntityMapBase(Of TEntity)._modelBuilder
+  href: api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.html#CG_EntityFrameworkCore_Maps_EntityMapBase_1__modelBuilder
+  commentId: F:CG.EntityFrameworkCore.Maps.EntityMapBase`1._modelBuilder
+  fullName: CG.EntityFrameworkCore.Maps.EntityMapBase<TEntity>._modelBuilder
+  fullName.vb: CG.EntityFrameworkCore.Maps.EntityMapBase(Of TEntity)._modelBuilder
   nameWithType: EntityMapBase<TEntity>._modelBuilder
   nameWithType.vb: EntityMapBase(Of TEntity)._modelBuilder
-- uid: CG.EntityFrameworkCore.EntityMapBase`1.Configure(EntityTypeBuilder{`0})
+- uid: CG.EntityFrameworkCore.Maps.EntityMapBase`1.Configure(EntityTypeBuilder{`0})
   name: Configure(EntityTypeBuilder<TEntity>)
-  href: api/CG.EntityFrameworkCore.EntityMapBase-1.html#CG_EntityFrameworkCore_EntityMapBase_1_Configure_EntityTypeBuilder__0__
-  commentId: M:CG.EntityFrameworkCore.EntityMapBase`1.Configure(EntityTypeBuilder{`0})
+  href: api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.html#CG_EntityFrameworkCore_Maps_EntityMapBase_1_Configure_EntityTypeBuilder__0__
+  commentId: M:CG.EntityFrameworkCore.Maps.EntityMapBase`1.Configure(EntityTypeBuilder{`0})
   name.vb: Configure(EntityTypeBuilder(Of TEntity))
-  fullName: CG.EntityFrameworkCore.EntityMapBase<TEntity>.Configure(EntityTypeBuilder<TEntity>)
-  fullName.vb: CG.EntityFrameworkCore.EntityMapBase(Of TEntity).Configure(EntityTypeBuilder(Of TEntity))
+  fullName: CG.EntityFrameworkCore.Maps.EntityMapBase<TEntity>.Configure(EntityTypeBuilder<TEntity>)
+  fullName.vb: CG.EntityFrameworkCore.Maps.EntityMapBase(Of TEntity).Configure(EntityTypeBuilder(Of TEntity))
   nameWithType: EntityMapBase<TEntity>.Configure(EntityTypeBuilder<TEntity>)
   nameWithType.vb: EntityMapBase(Of TEntity).Configure(EntityTypeBuilder(Of TEntity))
-- uid: CG.EntityFrameworkCore.EntityMapBase`1.Configure*
+- uid: CG.EntityFrameworkCore.Maps.EntityMapBase`1.Configure*
   name: Configure
-  href: api/CG.EntityFrameworkCore.EntityMapBase-1.html#CG_EntityFrameworkCore_EntityMapBase_1_Configure_
-  commentId: Overload:CG.EntityFrameworkCore.EntityMapBase`1.Configure
+  href: api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.html#CG_EntityFrameworkCore_Maps_EntityMapBase_1_Configure_
+  commentId: Overload:CG.EntityFrameworkCore.Maps.EntityMapBase`1.Configure
   isSpec: "True"
-  fullName: CG.EntityFrameworkCore.EntityMapBase<TEntity>.Configure
-  fullName.vb: CG.EntityFrameworkCore.EntityMapBase(Of TEntity).Configure
+  fullName: CG.EntityFrameworkCore.Maps.EntityMapBase<TEntity>.Configure
+  fullName.vb: CG.EntityFrameworkCore.Maps.EntityMapBase(Of TEntity).Configure
   nameWithType: EntityMapBase<TEntity>.Configure
   nameWithType.vb: EntityMapBase(Of TEntity).Configure
 - uid: CG.EntityFrameworkCore.Options
@@ -123,6 +187,55 @@ references:
   isSpec: "True"
   fullName: CG.EntityFrameworkCore.Options.DataAcessLayerOptions.SectionPath
   nameWithType: DataAcessLayerOptions.SectionPath
+- uid: CG.EntityFrameworkCore.Repositories
+  name: CG.EntityFrameworkCore.Repositories
+  href: api/CG.EntityFrameworkCore.Repositories.html
+  commentId: N:CG.EntityFrameworkCore.Repositories
+  fullName: CG.EntityFrameworkCore.Repositories
+  nameWithType: CG.EntityFrameworkCore.Repositories
+- uid: CG.EntityFrameworkCore.Repositories.RepositoryBase`2
+  name: RepositoryBase<TRepository, TContext>
+  href: api/CG.EntityFrameworkCore.Repositories.RepositoryBase-2.html
+  commentId: T:CG.EntityFrameworkCore.Repositories.RepositoryBase`2
+  name.vb: RepositoryBase(Of TRepository, TContext)
+  fullName: CG.EntityFrameworkCore.Repositories.RepositoryBase<TRepository, TContext>
+  fullName.vb: CG.EntityFrameworkCore.Repositories.RepositoryBase(Of TRepository, TContext)
+  nameWithType: RepositoryBase<TRepository, TContext>
+  nameWithType.vb: RepositoryBase(Of TRepository, TContext)
+- uid: CG.EntityFrameworkCore.Repositories.RepositoryBase`2.#ctor(`1,ILogger{`0})
+  name: RepositoryBase(TContext, ILogger<TRepository>)
+  href: api/CG.EntityFrameworkCore.Repositories.RepositoryBase-2.html#CG_EntityFrameworkCore_Repositories_RepositoryBase_2__ctor__1_ILogger__0__
+  commentId: M:CG.EntityFrameworkCore.Repositories.RepositoryBase`2.#ctor(`1,ILogger{`0})
+  name.vb: RepositoryBase(TContext, ILogger(Of TRepository))
+  fullName: CG.EntityFrameworkCore.Repositories.RepositoryBase<TRepository, TContext>.RepositoryBase(TContext, ILogger<TRepository>)
+  fullName.vb: CG.EntityFrameworkCore.Repositories.RepositoryBase(Of TRepository, TContext).RepositoryBase(TContext, ILogger(Of TRepository))
+  nameWithType: RepositoryBase<TRepository, TContext>.RepositoryBase(TContext, ILogger<TRepository>)
+  nameWithType.vb: RepositoryBase(Of TRepository, TContext).RepositoryBase(TContext, ILogger(Of TRepository))
+- uid: CG.EntityFrameworkCore.Repositories.RepositoryBase`2.#ctor*
+  name: RepositoryBase
+  href: api/CG.EntityFrameworkCore.Repositories.RepositoryBase-2.html#CG_EntityFrameworkCore_Repositories_RepositoryBase_2__ctor_
+  commentId: Overload:CG.EntityFrameworkCore.Repositories.RepositoryBase`2.#ctor
+  isSpec: "True"
+  fullName: CG.EntityFrameworkCore.Repositories.RepositoryBase<TRepository, TContext>.RepositoryBase
+  fullName.vb: CG.EntityFrameworkCore.Repositories.RepositoryBase(Of TRepository, TContext).RepositoryBase
+  nameWithType: RepositoryBase<TRepository, TContext>.RepositoryBase
+  nameWithType.vb: RepositoryBase(Of TRepository, TContext).RepositoryBase
+- uid: CG.EntityFrameworkCore.Repositories.RepositoryBase`2._dbContext
+  name: _dbContext
+  href: api/CG.EntityFrameworkCore.Repositories.RepositoryBase-2.html#CG_EntityFrameworkCore_Repositories_RepositoryBase_2__dbContext
+  commentId: F:CG.EntityFrameworkCore.Repositories.RepositoryBase`2._dbContext
+  fullName: CG.EntityFrameworkCore.Repositories.RepositoryBase<TRepository, TContext>._dbContext
+  fullName.vb: CG.EntityFrameworkCore.Repositories.RepositoryBase(Of TRepository, TContext)._dbContext
+  nameWithType: RepositoryBase<TRepository, TContext>._dbContext
+  nameWithType.vb: RepositoryBase(Of TRepository, TContext)._dbContext
+- uid: CG.EntityFrameworkCore.Repositories.RepositoryBase`2._logger
+  name: _logger
+  href: api/CG.EntityFrameworkCore.Repositories.RepositoryBase-2.html#CG_EntityFrameworkCore_Repositories_RepositoryBase_2__logger
+  commentId: F:CG.EntityFrameworkCore.Repositories.RepositoryBase`2._logger
+  fullName: CG.EntityFrameworkCore.Repositories.RepositoryBase<TRepository, TContext>._logger
+  fullName.vb: CG.EntityFrameworkCore.Repositories.RepositoryBase(Of TRepository, TContext)._logger
+  nameWithType: RepositoryBase<TRepository, TContext>._logger
+  nameWithType.vb: RepositoryBase(Of TRepository, TContext)._logger
 - uid: Microsoft.AspNetCore.Builder
   name: Microsoft.AspNetCore.Builder
   href: api/Microsoft.AspNetCore.Builder.html

@@ -1,13 +1,23 @@
 {
-  "api/CG.EntityFrameworkCore.EntityMapBase-1.html": {
-    "href": "api/CG.EntityFrameworkCore.EntityMapBase-1.html",
-    "title": "Class EntityMapBase<TEntity>",
-    "keywords": "Class EntityMapBase<TEntity> This class represents a base implementation of the interface. Inheritance System.Object EntityMapBase<TEntity> Namespace : CG.EntityFrameworkCore Assembly : CG.EntityFrameworkCore.dll Syntax public abstract class EntityMapBase<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : class Type Parameters Name Description TEntity The type of associated entity. Constructors EntityMapBase(ModelBuilder) This constructor creates a new instance of the EntityMapBase<TEntity> class. Declaration public EntityMapBase(ModelBuilder modelBuilder) Parameters Type Name Description ModelBuilder modelBuilder The model builder to use with this map. Fields _modelBuilder This field contains the model builder for this map. Declaration protected readonly ModelBuilder _modelBuilder Field Value Type Description ModelBuilder Methods Configure(EntityTypeBuilder<TEntity>) This method may be overridden in order to configure the TEntity entity. Declaration public abstract void Configure(EntityTypeBuilder<TEntity> builder) Parameters Type Name Description EntityTypeBuilder <TEntity> builder The builder to use for the operation."
+  "api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html": {
+    "href": "api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html",
+    "title": "Class AuditedEntityBase",
+    "keywords": "Class AuditedEntityBase This class represents a base entity with audit properties. Inheritance System.Object AuditedEntityBase Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.EntityFrameworkCore.Entities Assembly : CG.EntityFrameworkCore.dll Syntax public class AuditedEntityBase Properties CreatedBy This property contains the name of the person who created the entity. Declaration public string CreatedBy { get; set; } Property Value Type Description System.String CreatedOnUtc This property contains the date/time when the entity was created. Declaration public DateTime CreatedOnUtc { get; set; } Property Value Type Description DateTime LastUpdatedBy This property contains the name of the last person to update the entity. Declaration public string LastUpdatedBy { get; set; } Property Value Type Description System.String LastUpdatedOnUtc This property contains the date/time when the entity was last updated. Declaration public DateTime? LastUpdatedOnUtc { get; set; } Property Value Type Description System.Nullable < DateTime >"
   },
-  "api/CG.EntityFrameworkCore.html": {
-    "href": "api/CG.EntityFrameworkCore.html",
-    "title": "Namespace CG.EntityFrameworkCore",
-    "keywords": "Namespace CG.EntityFrameworkCore Classes EntityMapBase<TEntity> This class represents a base implementation of the interface."
+  "api/CG.EntityFrameworkCore.Entities.html": {
+    "href": "api/CG.EntityFrameworkCore.Entities.html",
+    "title": "Namespace CG.EntityFrameworkCore.Entities",
+    "keywords": "Namespace CG.EntityFrameworkCore.Entities Classes AuditedEntityBase This class represents a base entity with audit properties."
+  },
+  "api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.html": {
+    "href": "api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.html",
+    "title": "Class EntityMapBase<TEntity>",
+    "keywords": "Class EntityMapBase<TEntity> This class represents a base implementation of the interface. Inheritance System.Object EntityMapBase<TEntity> Namespace : CG.EntityFrameworkCore.Maps Assembly : CG.EntityFrameworkCore.dll Syntax public abstract class EntityMapBase<TEntity> : IEntityTypeConfiguration<TEntity> where TEntity : class Type Parameters Name Description TEntity The type of associated entity. Constructors EntityMapBase(ModelBuilder) This constructor creates a new instance of the EntityMapBase<TEntity> class. Declaration public EntityMapBase(ModelBuilder modelBuilder) Parameters Type Name Description ModelBuilder modelBuilder The model builder to use with this map. Fields _modelBuilder This field contains the model builder for this map. Declaration protected readonly ModelBuilder _modelBuilder Field Value Type Description ModelBuilder Methods Configure(EntityTypeBuilder<TEntity>) This method may be overridden in order to configure the TEntity entity. Declaration public abstract void Configure(EntityTypeBuilder<TEntity> builder) Parameters Type Name Description EntityTypeBuilder <TEntity> builder The builder to use for the operation."
+  },
+  "api/CG.EntityFrameworkCore.Maps.html": {
+    "href": "api/CG.EntityFrameworkCore.Maps.html",
+    "title": "Namespace CG.EntityFrameworkCore.Maps",
+    "keywords": "Namespace CG.EntityFrameworkCore.Maps Classes EntityMapBase<TEntity> This class represents a base implementation of the interface."
   },
   "api/CG.EntityFrameworkCore.Options.DataAcessLayerOptions.html": {
     "href": "api/CG.EntityFrameworkCore.Options.DataAcessLayerOptions.html",
@@ -18,6 +28,16 @@
     "href": "api/CG.EntityFrameworkCore.Options.html",
     "title": "Namespace CG.EntityFrameworkCore.Options",
     "keywords": "Namespace CG.EntityFrameworkCore.Options Classes DataAcessLayerOptions This class contains configuration settings for a data-access layer (DAL)."
+  },
+  "api/CG.EntityFrameworkCore.Repositories.html": {
+    "href": "api/CG.EntityFrameworkCore.Repositories.html",
+    "title": "Namespace CG.EntityFrameworkCore.Repositories",
+    "keywords": "Namespace CG.EntityFrameworkCore.Repositories Classes RepositoryBase<TRepository, TContext> This class is a base implementation of an Entity Framework repository."
+  },
+  "api/CG.EntityFrameworkCore.Repositories.RepositoryBase-2.html": {
+    "href": "api/CG.EntityFrameworkCore.Repositories.RepositoryBase-2.html",
+    "title": "Class RepositoryBase<TRepository, TContext>",
+    "keywords": "Class RepositoryBase<TRepository, TContext> This class is a base implementation of an Entity Framework repository. Inheritance System.Object RepositoryBase<TRepository, TContext> Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.EntityFrameworkCore.Repositories Assembly : CG.EntityFrameworkCore.dll Syntax public abstract class RepositoryBase<TRepository, TContext> where TRepository : RepositoryBase<TRepository, TContext> where TContext : DbContext Type Parameters Name Description TRepository The type of associated concrete repository. TContext The type of associated data-context. Constructors RepositoryBase(TContext, ILogger<TRepository>) This constructor creates a new instance of the RepositoryBase<TRepository, TContext> class. Declaration public RepositoryBase(TContext dbContext, ILogger<TRepository> logger) Parameters Type Name Description TContext dbContext The EFCORE data-context to use with this repository. ILogger <TRepository> logger The logger to use with this repository. Fields _dbContext This field contains the data-context for this repository. Declaration protected readonly TContext _dbContext Field Value Type Description TContext _logger This field contains the logger for this repository. Declaration protected readonly ILogger<TRepository> _logger Field Value Type Description ILogger <TRepository>"
   },
   "api/index.html": {
     "href": "api/index.html",

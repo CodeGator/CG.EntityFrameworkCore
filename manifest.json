@@ -14,11 +14,47 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.EntityFrameworkCore.EntityMapBase-1.yml",
+      "source_relative_path": "api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.EntityFrameworkCore.EntityMapBase-1.html",
-          "hash": "hX5yjttuCS3pg3HW2FimQYoQ4nfQgWmno3HaSc97s3M="
+          "relative_path": "api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.html",
+          "hash": "hAdM7YMs8FrO1Yg5iEazhNsK+Tq+X4rXs+WkFM1qPJ4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.EntityFrameworkCore.Entities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.EntityFrameworkCore.Entities.html",
+          "hash": "EBhcr0EVqC3IIv3v0EEN+YMop79w/nA6peu1PW0NIIM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.html",
+          "hash": "qFJYnBSkGeYE6wELuTQeaRUeabWl3s8E+anX6+6asRw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.EntityFrameworkCore.Maps.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.EntityFrameworkCore.Maps.html",
+          "hash": "Fb9k61KEyApaX6cMt36s1ekPTmwn1XSR8g7b/6vMzDk="
         }
       },
       "is_incremental": false,
@@ -50,11 +86,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.EntityFrameworkCore.yml",
+      "source_relative_path": "api/CG.EntityFrameworkCore.Repositories.RepositoryBase-2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CG.EntityFrameworkCore.html",
-          "hash": "k/4N97x0x3wUW9V8DjeEocUyWIUYnwH2koXOonVZS9Y="
+          "relative_path": "api/CG.EntityFrameworkCore.Repositories.RepositoryBase-2.html",
+          "hash": "hxaQbhQeJgECgWGegnxVhiZb/hH49g+5EKOmiqQx+aw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.EntityFrameworkCore.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.EntityFrameworkCore.Repositories.html",
+          "hash": "K8/8K7w1DmdlaeX22v1txyLQ6u/7n1sScXf4+zp8irY="
         }
       },
       "is_incremental": false,
@@ -162,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "aGUoXELSlL9T2ZIX1p5HtFYOohWp/W5/DNTGCuzjur8="
+          "hash": "xlhKOc0EkhMrybIvNUxj6OrBJ44B3Ws/HEQDrhDnKEw="
         }
       },
       "is_incremental": false,
@@ -254,7 +302,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "DXkG/DgFo3++SxvU91L/hWcGYQnYubFb0V24IHEoiDo="
+          "hash": "OCfFkXzZSgzblQHa4tTIy1hhEqaOb55oaiaggeNGGr4="
         }
       },
       "is_incremental": false,
@@ -281,7 +329,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 11,
+          "total_file_count": 15,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
