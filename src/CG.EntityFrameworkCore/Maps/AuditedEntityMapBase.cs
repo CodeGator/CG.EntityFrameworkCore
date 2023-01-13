@@ -5,7 +5,7 @@ namespace CG.EntityFrameworkCore.Maps;
 /// This class represents a base map for entity types derived from <see cref="AuditedEntityBase"/>
 /// </summary>
 /// <typeparam name="TEntity">The associated concrete <see cref="AuditedEntityBase"/></typeparam>
-internal abstract class AuditedEntityMapBase<TEntity> : 
+public abstract class AuditedEntityMapBase<TEntity> : 
     EntityMapBase<TEntity>, 
     IEntityTypeConfiguration<TEntity>
     where TEntity : AuditedEntityBase
