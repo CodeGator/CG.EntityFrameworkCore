@@ -71,6 +71,50 @@ references:
   commentId: N:CG.EntityFrameworkCore.Maps
   fullName: CG.EntityFrameworkCore.Maps
   nameWithType: CG.EntityFrameworkCore.Maps
+- uid: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase`1
+  name: AuditedEntityMapBase<TEntity>
+  href: api/CG.EntityFrameworkCore.Maps.AuditedEntityMapBase-1.html
+  commentId: T:CG.EntityFrameworkCore.Maps.AuditedEntityMapBase`1
+  name.vb: AuditedEntityMapBase(Of TEntity)
+  fullName: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase<TEntity>
+  fullName.vb: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase(Of TEntity)
+  nameWithType: AuditedEntityMapBase<TEntity>
+  nameWithType.vb: AuditedEntityMapBase(Of TEntity)
+- uid: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase`1.#ctor(ModelBuilder)
+  name: AuditedEntityMapBase(ModelBuilder)
+  href: api/CG.EntityFrameworkCore.Maps.AuditedEntityMapBase-1.html#CG_EntityFrameworkCore_Maps_AuditedEntityMapBase_1__ctor_ModelBuilder_
+  commentId: M:CG.EntityFrameworkCore.Maps.AuditedEntityMapBase`1.#ctor(ModelBuilder)
+  fullName: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase<TEntity>.AuditedEntityMapBase(ModelBuilder)
+  fullName.vb: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase(Of TEntity).AuditedEntityMapBase(ModelBuilder)
+  nameWithType: AuditedEntityMapBase<TEntity>.AuditedEntityMapBase(ModelBuilder)
+  nameWithType.vb: AuditedEntityMapBase(Of TEntity).AuditedEntityMapBase(ModelBuilder)
+- uid: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase`1.#ctor*
+  name: AuditedEntityMapBase
+  href: api/CG.EntityFrameworkCore.Maps.AuditedEntityMapBase-1.html#CG_EntityFrameworkCore_Maps_AuditedEntityMapBase_1__ctor_
+  commentId: Overload:CG.EntityFrameworkCore.Maps.AuditedEntityMapBase`1.#ctor
+  isSpec: "True"
+  fullName: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase<TEntity>.AuditedEntityMapBase
+  fullName.vb: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase(Of TEntity).AuditedEntityMapBase
+  nameWithType: AuditedEntityMapBase<TEntity>.AuditedEntityMapBase
+  nameWithType.vb: AuditedEntityMapBase(Of TEntity).AuditedEntityMapBase
+- uid: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase`1.Configure(EntityTypeBuilder{`0})
+  name: Configure(EntityTypeBuilder<TEntity>)
+  href: api/CG.EntityFrameworkCore.Maps.AuditedEntityMapBase-1.html#CG_EntityFrameworkCore_Maps_AuditedEntityMapBase_1_Configure_EntityTypeBuilder__0__
+  commentId: M:CG.EntityFrameworkCore.Maps.AuditedEntityMapBase`1.Configure(EntityTypeBuilder{`0})
+  name.vb: Configure(EntityTypeBuilder(Of TEntity))
+  fullName: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase<TEntity>.Configure(EntityTypeBuilder<TEntity>)
+  fullName.vb: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase(Of TEntity).Configure(EntityTypeBuilder(Of TEntity))
+  nameWithType: AuditedEntityMapBase<TEntity>.Configure(EntityTypeBuilder<TEntity>)
+  nameWithType.vb: AuditedEntityMapBase(Of TEntity).Configure(EntityTypeBuilder(Of TEntity))
+- uid: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase`1.Configure*
+  name: Configure
+  href: api/CG.EntityFrameworkCore.Maps.AuditedEntityMapBase-1.html#CG_EntityFrameworkCore_Maps_AuditedEntityMapBase_1_Configure_
+  commentId: Overload:CG.EntityFrameworkCore.Maps.AuditedEntityMapBase`1.Configure
+  isSpec: "True"
+  fullName: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase<TEntity>.Configure
+  fullName.vb: CG.EntityFrameworkCore.Maps.AuditedEntityMapBase(Of TEntity).Configure
+  nameWithType: AuditedEntityMapBase<TEntity>.Configure
+  nameWithType.vb: AuditedEntityMapBase(Of TEntity).Configure
 - uid: CG.EntityFrameworkCore.Maps.EntityMapBase`1
   name: EntityMapBase<TEntity>
   href: api/CG.EntityFrameworkCore.Maps.EntityMapBase-1.html
