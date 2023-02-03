@@ -29,13 +29,6 @@ public static class WebApplicationExtensions
     /// <exception cref="InvalidDataException">This exception is thrown 
     /// whenever a provider's configuration is incomplete, or contains
     /// invalid information.</exception>
-    /// <remarks>
-    /// <para>
-    /// The method only functions while running in a development environment.
-    /// For use in non-development environments, the method returns without 
-    /// actually doing anything.
-    /// </para>
-    /// </remarks>
     /// <example>
     /// This example demonstrates using the method in a typical ASP.NET application:
     /// <code>
@@ -58,18 +51,6 @@ public static class WebApplicationExtensions
     {
         // Validate the parameters before attempting to use them.
         Guard.Instance().ThrowIfNull(webApplication, nameof(webApplication));
-
-        // Log what we are about to do.
-        webApplication.Logger.LogDebug(
-            "Checking the environment for DAL startup."
-            );
-
-        // We only do stuff in a development environment.
-        if (!webApplication.Environment.IsDevelopment())
-        {
-            // Return the application.
-            return webApplication;
-        }
 
         // Log what we are about to do.
         webApplication.Logger.LogDebug(
