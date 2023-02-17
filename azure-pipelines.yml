@@ -14,11 +14,6 @@ steps:
 - checkout: self
   fetchDepth: 0
 
-- task: UseDotNet@2
-  inputs:
-    packageType: 'sdk'
-    useGlobalJson: true
-
 - task: NuGetToolInstaller@1
   inputs:
     versionSpec: '5.1.0'
@@ -33,26 +28,21 @@ steps:
     arguments: '--interactive'
     projects: '$(SolutionPath).sln'
 
-- task: VSBuild@1
-  displayName: 'build code'
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet build'
   inputs:
-    solution: '$(SolutionPath)'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    command: 'build'
+    arguments: '--configuration $(BuildConfiguration)'
+    projects: '$(SolutionPath).sln'
     
-- task: VSTest@2
-  displayName: 'test code'
+- task: DotNetCoreCLI@2
+  displayName: "dotnet test"
   inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: |
-      **\*Tests.dll
-      !**\obj\**
-      !**\bin\**\ref\**
-    searchFolder: '$(System.DefaultWorkingDirectory)'
-    codeCoverageEnabled: true
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    command: 'test'
+    projects: '$(SolutionPath).sln'
+    arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
+    publishTestResults: true
+    nobuild: true
 
 - task: PublishCodeCoverageResults@1
   displayName: "publish coverage"
@@ -81,14 +71,14 @@ steps:
     Add-Content "$HOME\.git-credentials" "https://$(GIT_PAT):x-oauth-basic@github.com`n"
     git config --global user.email $(OP_USER_EMAIL)
     git config --global user.name $(OP_USER)
-    git clone https://github.com/CodeGator/CG.EntityFrameworkCore.git -b gh-pages origin_site -q
+    git clone https://github.com/CodeGator/CG.Blazor.git -b gh-pages origin_site -q
     Copy-Item origin_site/.git _site -recurse
     CD _site
     git add -A
     git commit -m "CI Updates [skip ci]" -q
     git push origin gh-pages -q
   displayName: "Publish docs"  
-
+  
 - task: DotNetCoreCLI@2
   displayName: "dotnet pack"
   inputs:
