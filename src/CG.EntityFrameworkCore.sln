@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33015.44
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.EntityFrameworkCore", "CG.EntityFrameworkCore\CG.EntityFrameworkCore.csproj", "{ADDD96C1-3818-4E41-924B-194EE93F3E76}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.EntityFramework.Tests", "..\tests\CG.EntityFrameworkCore.Tests\CG.EntityFramework.Tests.csproj", "{59A73999-D758-42FB-8260-1D5B4FA1EA52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CG.EntityFrameworkCore.Tests", "..\tests\CG.EntityFrameworkCore.Tests\CG.EntityFrameworkCore.Tests.csproj", "{8978A64D-9A21-4D76-BF17-79E9DFD14179}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{ADDD96C1-3818-4E41-924B-194EE93F3E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADDD96C1-3818-4E41-924B-194EE93F3E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADDD96C1-3818-4E41-924B-194EE93F3E76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59A73999-D758-42FB-8260-1D5B4FA1EA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59A73999-D758-42FB-8260-1D5B4FA1EA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59A73999-D758-42FB-8260-1D5B4FA1EA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59A73999-D758-42FB-8260-1D5B4FA1EA52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8978A64D-9A21-4D76-BF17-79E9DFD14179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8978A64D-9A21-4D76-BF17-79E9DFD14179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8978A64D-9A21-4D76-BF17-79E9DFD14179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8978A64D-9A21-4D76-BF17-79E9DFD14179}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
