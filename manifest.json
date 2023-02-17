@@ -14,6 +14,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.EntityFrameworkCore.Auditing.AuditEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.EntityFrameworkCore.Auditing.AuditEvent.html",
+          "hash": "CjofjUwbzGg+GAKPvf6eBSce4sF8Dge7HtrJ4IandoQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.EntityFrameworkCore.Auditing.AuditedEntityAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.EntityFrameworkCore.Auditing.AuditedEntityAttribute.html",
+          "hash": "lctVj+3ObOyDKnrDhrfX8MimNQwQoMnUrfddCJi4J0E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.EntityFrameworkCore.Auditing.IAuditRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.EntityFrameworkCore.Auditing.IAuditRepository.html",
+          "hash": "QN0K4CYV/AIRs5EGTSrP9heztf6jNn6okaBJbVQd70U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.EntityFrameworkCore.Auditing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.EntityFrameworkCore.Auditing.html",
+          "hash": "FEWFDLsqFFpS82ecjMW+PyNpm0zLEU8tGBozLypEdAw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.yml",
       "output": {
         ".html": {
@@ -126,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html",
-          "hash": "sdVWqo2ad8uoYnBZiQzDhwrpkIkdo5SQicvLItDQOqY="
+          "hash": "/HpxxngTV6QGOTVkdPE0zhJZU3SOv+0pfrTw7PSRdlc="
         }
       },
       "is_incremental": false,
@@ -170,6 +218,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.EntityFrameworkCore.DbContextOptionsBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.EntityFrameworkCore.DbContextOptionsBuilderExtensions.html",
+          "hash": "/of1XOkKk1ty7B7HumY6qVue/kze3rJdP3mVTsDOt0Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.EntityFrameworkCore.Design.DesignTimeDbContextFactory-1.yml",
       "output": {
         ".html": {
@@ -198,7 +258,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.EntityFrameworkCore.html",
-          "hash": "yKrU5lFoeZ0+VRfLWzRZwwU1zAovF8ttZEH+EecB1l8="
+          "hash": "FqGIspU1HIVz5z/g2gpr4lMAnV/Qv+uk398RRXO4qcE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
+          "hash": "SuxRu8g3xzPijVqTdDyMfdvSyIibCUbfo7td0E7DvzY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
+          "hash": "HEpcdMovKT9P50jRRiYWjH3dLXFsbDV9Djl7FVNAH68="
         }
       },
       "is_incremental": false,
@@ -222,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ju8UydtRL9Jr3qWavXSQLdI/WLlUcp9+U/6hJO5uYv8="
+          "hash": "YcSMBSsKFSOwkkkNmhDpF3WPIta8g6elf5W3oaDqiDk="
         }
       },
       "is_incremental": false,
@@ -314,7 +398,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "OCfFkXzZSgzblQHa4tTIy1hhEqaOb55oaiaggeNGGr4="
+          "hash": "d2mV0MIQHunaoVVE9q7FlQqkv5MMSmlpuRfhe/3ZK/8="
         }
       },
       "is_incremental": false,
@@ -341,7 +425,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 16,
+          "total_file_count": 23,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
