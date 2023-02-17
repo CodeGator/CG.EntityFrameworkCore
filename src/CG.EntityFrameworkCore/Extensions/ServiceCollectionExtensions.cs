@@ -1,13 +1,11 @@
 ﻿
-using Microsoft.Extensions.DependencyInjection;
-
-namespace Microsoft.AspNetCore.Builder;
+namespace Microsoft.Extensions.DependencyInjection;
 
 /// <summary>
-/// This class contains extension methods related to the <see cref="WebApplicationBuilder"/>
+/// This class contains extension methods related to the <see cref="IServiceCollection"/>
 /// type.
 /// </summary>
-public static class WebApplicationBuilderExtensions
+public static class ServiceCollectionExtensions
 {
     // *******************************************************************
     // Public methods.
@@ -16,73 +14,33 @@ public static class WebApplicationBuilderExtensions
     #region Public methods
 
     /// <summary>
-    /// This method uses the information in the specified configuration 
-    /// section to call the <c>AddXXXDataAcess</c> method, for the currently 
-    /// configured provider, where the <c>XXX</c> part is dynamically replaced 
-    /// with the value of the <c>DAL:Provider</c> key, in the configuration. 
+    /// This method adds services required to support entity framework core
+    /// auditing.
     /// </summary>
-    /// <param name="webApplicationBuilder">The web application builder to
-    /// use for the operation.</param>
+    /// <param name="serviceCollection">The service collection to use for
+    /// the operation.</param>
+    /// <param name="configuration">The configuration to use for the operation.</param>
     /// <param name="sectionPath">The configuration section path to use for 
     /// the operation. Defaults to <c>DAL</c>.</param>
     /// <param name="bootstrapLogger">An optional bootstrap logger to use 
     /// for the operation.</param>
-    /// <returns>The value of the <paramref name="webApplicationBuilder"/>
+    /// <returns>The value of the <paramref name="serviceCollection"/>
     /// parameter, for chaining calls together, Fluent style.</returns>
     /// <exception cref="ArgumentException">This exception is thrown whenever
     /// one or more arguments are missing, or invalid.</exception>
     /// <exception cref="InvalidDataException">This exception is thrown 
     /// whenever the assembly name is missing, or empty, for the provider.
     /// </exception>
-    /// <remarks>
-    /// <para>
-    /// There is a convention that says the target extension method, in your
-    /// assembly, should look like this:
-    /// <code>
-    /// public static WebApplicationBuilder AddMyProviderDataAccess(
-    ///     this WebApplicationBuilder webApplicationBuilder,
-    ///     string sectionName = "DAL:MyProvider",
-    ///     ILogger? bootstrapLogger = null
-    ///     );
-    /// </code>
-    /// Where the <c>AddMyProviderDataAccess</c> method name is derived from
-    /// the corresponding provider (<c>MyProvider</c> in this example).
-    /// </para>
-    /// <para>
-    /// The <c>SectionName</c> parameter can by anything you like, but it should
-    /// be legal a JSON name, since it must match a corresponding section in the 
-    /// application's configuration. 
-    /// </para>
-    /// <para>
-    /// The <c>bootstrapLogger</c> parameter can be provided if you want to 
-    /// log the internal actions of the method. That can be useful for troubleshooting,
-    /// when the method fails to find, or call, your extension method.
-    /// </para>
-    /// </remarks>
-    /// <example>
-    /// This example demonstrates using the method in a typical ASP.NET application:
-    /// <code>
-    ///     var builder = WebApplication.CreateBuilder(args);
-    ///     
-    ///     builder.AddDataAccess();
-    /// 
-    ///     // Normal builder configuration code removed, for clarity
-    ///     
-    ///     var app = builder.Build();
-    ///
-    ///     // Normal app startup code removed, for clarity
-    ///     
-    ///     app.Run();
-    /// </code>
-    /// </example>
-    public static WebApplicationBuilder AddDataAccess(
-        this WebApplicationBuilder webApplicationBuilder,
+    public static IServiceCollection AddDataAccess(
+        this IServiceCollection serviceCollection,
+        IConfiguration configuration,
         string sectionPath = "DAL",
         ILogger? bootstrapLogger = null
         )
     {
         // Validate the parameters before attempting to use them.
-        Guard.Instance().ThrowIfNull(webApplicationBuilder, nameof(webApplicationBuilder))
+        Guard.Instance().ThrowIfNull(serviceCollection, nameof(serviceCollection))
+            .ThrowIfNull(configuration, nameof(configuration))
             .ThrowIfNullOrEmpty(sectionPath, nameof(sectionPath));
 
         // Tell the world what we are about to do.
@@ -92,7 +50,7 @@ public static class WebApplicationBuilderExtensions
             );
 
         // Get the section we need to target.
-        var baseSection = webApplicationBuilder.Configuration.GetSection(
+        var baseSection = configuration.GetSection(
             sectionPath
             );
 
@@ -104,7 +62,7 @@ public static class WebApplicationBuilderExtensions
             );
 
         // Configure the DAL options.
-        webApplicationBuilder.Services.ConfigureOptions<DataAcessLayerOptions>(
+        serviceCollection.ConfigureOptions<DataAcessLayerOptions>(
             baseSection,
             out var dalOptions
             );
@@ -127,7 +85,7 @@ public static class WebApplicationBuilderExtensions
             "Getting the '{section}:{prov}' section, for the data " +
             "access layer",
             sectionPath,
-            providerName            
+            providerName
             );
 
         // Get the configuration section for the provider.
@@ -168,11 +126,13 @@ public static class WebApplicationBuilderExtensions
         // Load the assembly (if needed) and look for a matching extension
         //   method, by name, with the parameters that match our convention.
         var methodInfo = AppDomain.CurrentDomain.ExtensionMethods(
-            extensionType: typeof(WebApplicationBuilder),
+            extensionType: typeof(IServiceCollection),
             extensionMethodName: methodName,
             assemblyWhiteList: assemblyName,
-            parameterTypes: new[] { typeof(string), typeof(ILogger) }
-            ); 
+            parameterTypes: new[] 
+            { 
+                typeof(string), typeof(ILogger)
+            });
 
         // Did we find a match?
         if (methodInfo is not null && methodInfo.Any())
@@ -191,7 +151,7 @@ public static class WebApplicationBuilderExtensions
                 null,
                 new object[]
                 {
-                    webApplicationBuilder,
+                    serviceCollection,
                     providerSection.Path,
                     bootstrapLogger
                 });
@@ -211,8 +171,8 @@ public static class WebApplicationBuilderExtensions
                 );
         }
 
-        // Return the application builder.
-        return webApplicationBuilder;
+        // Return the service collection.
+        return serviceCollection;
     }
 
     // *******************************************************************
@@ -220,10 +180,8 @@ public static class WebApplicationBuilderExtensions
     /// <summary>
     /// This method adds auditing support for the data-access library.
     /// </summary>
-    /// <param name="webApplicationBuilder">The web application builder to
-    /// use for the operation.</param>
-    /// <param name="sectionPath">The configuration section path to use for 
-    /// the operation. Defaults to <c>DAL:Auditing</c>.</param>
+    /// <param name="serviceCollection">The service collection to use for 
+    /// the operation.</param>
     /// <param name="optionsDelegate">The delegate for specifying options 
     /// for the audit data-context.</param>
     /// <param name="manualEntities">The delegate for specifying manual 
@@ -231,21 +189,19 @@ public static class WebApplicationBuilderExtensions
     /// with a <see cref="AuditedEntityAttribute"/> attribute.</param>
     /// <param name="bootstrapLogger">An optional bootstrap logger to use 
     /// for the operation.</param>
-    /// <returns>The value of the <paramref name="webApplicationBuilder"/>
+    /// <returns>The value of the <paramref name="serviceCollection"/>
     /// parameter, for chaining calls together, Fluent style.</returns>
     /// <exception cref="ArgumentException">This exception is thrown whenever
     /// one or more arguments are missing, or invalid.</exception>
-    public static WebApplicationBuilder AddAuditing(
-        this WebApplicationBuilder webApplicationBuilder,
+    public static IServiceCollection AddAuditing(
+        this IServiceCollection serviceCollection,
         Action<IServiceProvider, DbContextOptionsBuilder> optionsDelegate,
         Func<IEnumerable<string>>? manualEntities = null,
-        string sectionPath = "DAL:Auditing",
         ILogger? bootstrapLogger = null
         )
     {
         // Validate the parameters before attempting to use them.
-        Guard.Instance().ThrowIfNull(webApplicationBuilder, nameof(webApplicationBuilder))
-            .ThrowIfNullOrEmpty(sectionPath, nameof(sectionPath))
+        Guard.Instance().ThrowIfNull(serviceCollection, nameof(serviceCollection))
             .ThrowIfNull(optionsDelegate, nameof(optionsDelegate));
 
         // Tell the world what we are about to do.
@@ -254,7 +210,7 @@ public static class WebApplicationBuilderExtensions
             );
 
         // Register our interceptor.
-        webApplicationBuilder.Services.AddSingleton<AuditInterceptor>();
+        serviceCollection.AddSingleton<AuditInterceptor>();
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
@@ -262,7 +218,7 @@ public static class WebApplicationBuilderExtensions
             );
 
         // Register our audit data-context.
-        webApplicationBuilder.Services.AddDbContext<AuditDbContext>((context, options) =>
+        serviceCollection.AddDbContext<AuditDbContext>((context, options) =>
         {
             // Give the caller the chance to modify the options.
             optionsDelegate.Invoke(context, options);
@@ -274,7 +230,7 @@ public static class WebApplicationBuilderExtensions
             );
 
         // Register the service(s) we'll need.
-        webApplicationBuilder.Services.AddHttpContextAccessor();
+        serviceCollection.AddHttpContextAccessor();
 
         // Tell the world what we are about to do.
         bootstrapLogger?.LogDebug(
@@ -282,7 +238,7 @@ public static class WebApplicationBuilderExtensions
             );
 
         // Register the repository(s) we'll need.
-        webApplicationBuilder.Services.AddScoped<IAuditRepository, AuditRepository>();
+        serviceCollection.AddScoped<IAuditRepository, AuditRepository>();
 
         // Do we need to deal with manual entities?
         if (manualEntities is not null)
@@ -293,7 +249,7 @@ public static class WebApplicationBuilderExtensions
                 );
 
             // Get any manual entity types.
-            var entityTypes = manualEntities?.Invoke()
+            var entityTypes = manualEntities?.Invoke() 
                 ?? Array.Empty<string>();
 
             // Tell the world what we are about to do.
@@ -303,18 +259,17 @@ public static class WebApplicationBuilderExtensions
                 );
 
             // Loop through the manual entity types.
-            foreach (var entityType in entityTypes.Distinct())
+            foreach (var entityType in entityTypes.Distinct()) 
             {
                 // Add a default attribute for this type.
                 AuditInterceptor._manualCache[entityType]
                     = new AuditedEntityAttribute();
-            }
+            }            
         }
 
-        // Return the application builder.
-        return webApplicationBuilder;
+        // Return the service collection.
+        return serviceCollection;
     }
 
     #endregion
 }
-
