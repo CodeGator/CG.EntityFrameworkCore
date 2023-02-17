@@ -33,21 +33,26 @@ steps:
     arguments: '--interactive'
     projects: '$(SolutionPath).sln'
 
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet build'
+- task: VSBuild@1
+  displayName: 'build code'
   inputs:
-    command: 'build'
-    arguments: '--configuration $(BuildConfiguration)'
-    projects: '$(SolutionPath).sln'
+    solution: '$(SolutionPath)'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
     
-- task: DotNetCoreCLI@2
-  displayName: "dotnet test"
+- task: VSTest@2
+  displayName: 'test code'
   inputs:
-    command: 'test'
-    projects: '$(SolutionPath).sln'
-    arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
-    publishTestResults: true
-    nobuild: true
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\*Tests.dll
+      !**\obj\**
+      !**\bin\**\ref\**
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    codeCoverageEnabled: true
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
 
 - task: PublishCodeCoverageResults@1
   displayName: "publish coverage"
