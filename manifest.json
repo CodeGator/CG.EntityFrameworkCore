@@ -14,54 +14,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.EntityFrameworkCore.Auditing.AuditEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.EntityFrameworkCore.Auditing.AuditEvent.html",
-          "hash": "CjofjUwbzGg+GAKPvf6eBSce4sF8Dge7HtrJ4IandoQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.EntityFrameworkCore.Auditing.AuditedEntityAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.EntityFrameworkCore.Auditing.AuditedEntityAttribute.html",
-          "hash": "lctVj+3ObOyDKnrDhrfX8MimNQwQoMnUrfddCJi4J0E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.EntityFrameworkCore.Auditing.IAuditRepository.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.EntityFrameworkCore.Auditing.IAuditRepository.html",
-          "hash": "QN0K4CYV/AIRs5EGTSrP9heztf6jNn6okaBJbVQd70U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.EntityFrameworkCore.Auditing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.EntityFrameworkCore.Auditing.html",
-          "hash": "FEWFDLsqFFpS82ecjMW+PyNpm0zLEU8tGBozLypEdAw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.EntityFrameworkCore.Entities.AuditedEntityBase.yml",
       "output": {
         ".html": {
@@ -174,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.WebApplicationBuilderExtensions.html",
-          "hash": "/HpxxngTV6QGOTVkdPE0zhJZU3SOv+0pfrTw7PSRdlc="
+          "hash": "sdVWqo2ad8uoYnBZiQzDhwrpkIkdo5SQicvLItDQOqY="
         }
       },
       "is_incremental": false,
@@ -218,18 +170,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.EntityFrameworkCore.DbContextOptionsBuilderExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.EntityFrameworkCore.DbContextOptionsBuilderExtensions.html",
-          "hash": "/of1XOkKk1ty7B7HumY6qVue/kze3rJdP3mVTsDOt0Y="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.EntityFrameworkCore.Design.DesignTimeDbContextFactory-1.yml",
       "output": {
         ".html": {
@@ -258,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.EntityFrameworkCore.html",
-          "hash": "FqGIspU1HIVz5z/g2gpr4lMAnV/Qv+uk398RRXO4qcE="
+          "hash": "yKrU5lFoeZ0+VRfLWzRZwwU1zAovF8ttZEH+EecB1l8="
         }
       },
       "is_incremental": false,
@@ -270,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
-          "hash": "SuxRu8g3xzPijVqTdDyMfdvSyIibCUbfo7td0E7DvzY="
+          "hash": "rzo/mjw10USEP73m33SrWLgfsTAIdzlsC2u+9TBN2nk="
         }
       },
       "is_incremental": false,
@@ -306,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "YcSMBSsKFSOwkkkNmhDpF3WPIta8g6elf5W3oaDqiDk="
+          "hash": "V9GIW7+aGl2srSB2trPl4IdXJqE5ASFzKuzcSB3YHLc="
         }
       },
       "is_incremental": false,
@@ -398,7 +338,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "d2mV0MIQHunaoVVE9q7FlQqkv5MMSmlpuRfhe/3ZK/8="
+          "hash": "OCfFkXzZSgzblQHa4tTIy1hhEqaOb55oaiaggeNGGr4="
         }
       },
       "is_incremental": false,
@@ -425,7 +365,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 23,
+          "total_file_count": 18,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
