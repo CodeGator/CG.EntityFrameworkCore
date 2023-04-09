@@ -63,13 +63,23 @@ public static class WebApplicationExtensions
             >().Value;
 
         // Get the provider name from the options.
-        var providerName = dalOptions.Provider.Trim();
+        var providerName = dalOptions.Provider?.Trim();
+
+        // Sanity check the provider name.
+        if (string.IsNullOrEmpty(providerName))
+        {
+            // Panic!!
+            throw new InvalidDataException(
+                $"The 'Provider' property on the DAL options is required " +
+                "but wasn't provided!"
+                );
+        }
 
         // Get the path to the provider's configuration section.
-        var providerSectionPath = $"{dalOptions.SectionPath.Trim()}:{providerName}";
+        var providerSectionPath = $"{dalOptions.SectionPath?.Trim()}:{providerName}";
 
         // Sanity check the provider's section path.
-        if (string.IsNullOrEmpty(providerSectionPath))
+        if (providerSectionPath == ":")
         {
             // Panic!!
             throw new InvalidDataException(
